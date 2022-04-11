@@ -1,0 +1,70 @@
+<header>
+  <nav>
+    <ul>
+      <li><a [routerLink]="['/']">Currency</a></li>
+      <li><a [routerLink]="['/wallet']">Wallet</a></li>
+    </ul>
+  </nav>
+  <div class="ultimaCotacao">
+    <div
+      class="
+      {{
+        this.walletService.Cotacoes[this.walletService.Cotacoes.length - 1]
+          .eur === this.walletService.latestCotacao.eur
+          ? 'neutro'
+          : this.walletService.Cotacoes[this.walletService.Cotacoes.length - 1]
+              .eur > this.walletService.latestCotacao.eur
+          ? 'subiu'
+          : 'desceu'
+      }}
+    "
+    >
+      EUR:
+      {{
+        this.walletService.Cotacoes[
+          this.walletService.Cotacoes.length - 1
+        ].eur.toFixed(2)
+      }}
+    </div>
+    <div
+      class="
+    {{
+        this.walletService.Cotacoes[this.walletService.Cotacoes.length - 1]
+          .usd === this.walletService.latestCotacao.usd
+          ? 'neutro'
+          : this.walletService.Cotacoes[this.walletService.Cotacoes.length - 1]
+              .usd > this.walletService.latestCotacao.usd
+          ? 'subiu'
+          : 'desceu'
+      }}
+    "
+    >
+      USD:
+      {{
+        this.walletService.Cotacoes[
+          this.walletService.Cotacoes.length - 1
+        ].usd.toFixed(2)
+      }}
+    </div>
+    <div
+      class="
+      {{
+        this.walletService.Cotacoes[this.walletService.Cotacoes.length - 1]
+          .btc === this.walletService.latestCotacao.btc
+          ? 'neutro'
+          : this.walletService.Cotacoes[this.walletService.Cotacoes.length - 1]
+              .btc > this.walletService.latestCotacao.btc
+          ? 'subiu'
+          : 'desceu'
+      }}
+    "
+    >
+      BTC:
+      {{
+        this.walletService.Cotacoes[
+          this.walletService.Cotacoes.length - 1
+        ].btc.toFixed(2)
+      }}
+    </div>
+  </div>
+</header>

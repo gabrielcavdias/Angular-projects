@@ -1,0 +1,40 @@
+.subiu {
+  color: green;
+}
+.desceu {
+  color: red;
+}
+.neutro {
+  color: #f2f2f2;
+}
+header {
+  display: flex;
+  border-bottom: 1px solid #4c566a;
+}
+nav {
+  background-color: #2e3440;
+  padding: 10px;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  padding: 15px 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+li:hover {
+  background-color: #3b4252;
+  transition: 0.5s;
+}
+li a {
+  color: #d8dee9;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: 0.4s;
+}
+li a:hover {
+  color: #fff;
+  transition: 0.4s;
+}

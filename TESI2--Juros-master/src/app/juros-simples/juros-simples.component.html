@@ -1,0 +1,28 @@
+<article>
+  <h1>Juros Simples</h1>
+  <label for="valor">Valor inicial:</label>
+  <input type="number" id="valor" [(ngModel)]="valor" />
+  <label for="taxa">Taxa:</label>
+  <input type="number" id="taxa" [(ngModel)]="taxa">
+  <label for="meses">Tempo:</label>
+  <input type="number" id="meses" [(ngModel)]="meses">
+
+  <table>
+    <thead>
+      <th>Mês</th>
+      <th>Montante começo do mês</th>
+      <th>Juros do mês</th>
+      <th>Montante final do mês</th>
+
+    </thead>
+    <tbody>
+      <tr *ngFor="let montanteFinal of simularJuros(); index as i;">
+        <td>{{i+1}}º</td>
+        <td>{{(montanteFinal-(valor/100)*taxa)}}</td>
+        <td>{{taxa}}% de {{valor}} = {{(valor/100)*taxa}}</td>
+        <td>{{montanteFinal}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</article>

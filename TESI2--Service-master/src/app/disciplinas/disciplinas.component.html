@@ -1,0 +1,12 @@
+<article>
+  <h1>Disciplinas</h1>
+  <label for="nvDisciplina">Nova Disciplina:</label>
+  <input type="text" id="nvDisciplina" [(ngModel)]="nvDisciplina">
+  <button (click)="handleAdd(nvDisciplina)">Adicionar</button>
+  <ul>
+    <li *ngFor="let disciplina of disciplinas.getDisciplinas(); index as i">
+      {{disciplina}}
+      <span (click)="disciplinas.rmDisciplina(i)">x</span>
+    </li>
+  </ul>
+</article>

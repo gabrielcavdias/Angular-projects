@@ -1,0 +1,29 @@
+ul {
+  flex-direction: column;
+  margin-top: 2rem;
+  border-top: 4px solid #4c566a;
+  border-bottom: 4px solid #4c566a;
+}
+li:first-of-type {
+  margin-top: 1rem;
+}
+li:last-of-type {
+  margin-bottom: 1rem;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+}
+li span {
+  display: none;
+}
+li:hover {
+  background-color: #5d6a88;
+}
+li:hover span {
+  display: inline;
+  cursor: pointer;
+  padding: 0 5px;
+  font-weight: bold;
+  color: tomato;
+}

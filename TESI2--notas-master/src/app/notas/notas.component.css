@@ -1,0 +1,47 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+table {
+  margin-top: 10px;
+  border: 1px solid #eee;
+  border-collapse: collapse;
+}
+th {
+  background-color: #dfe2e9;
+  color: rgb(17, 17, 17);
+  border: 1px solid #4c566a;
+}
+td {
+  border: 1px solid #eee;
+}
+td,
+th {
+  padding: 10px;
+}
+td input {
+  border: 0;
+  background-color: #3b4252;
+  color: #dfe2e9;
+  font-size: 1rem;
+  text-align: center;
+}
+td button {
+  display: none;
+  /* display: block; */
+  border: 0;
+  padding: 5px;
+  margin: 0 auto;
+}
+td button:active {
+  background-color: #ccc;
+}
+td:hover button {
+  display: block;
+}

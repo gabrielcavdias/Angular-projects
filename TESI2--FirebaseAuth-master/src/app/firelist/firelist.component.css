@@ -1,0 +1,14 @@
+.removeItem {
+  background: red;
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #fff;
+}
+li {
+  list-style-type: none;
+  border: 1px solid blue;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}

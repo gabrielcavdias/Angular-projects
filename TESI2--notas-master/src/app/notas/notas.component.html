@@ -1,0 +1,32 @@
+<article>
+  <h1>Notas</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Prova</th>
+        <th *ngFor="let disciplina of disciplinas.getLista(); index as i">
+          {{disciplina.nome}}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          P1
+        </td>
+        <td *ngFor="let disciplina of disciplinas.getLista(); index as i">
+          <input type="number" #input value="{{disciplina.ntp1}}">
+          <!--disciplinas.changeNtp1(i,input.value)-->
+          <button (click)="ntP1(i, input.value)">Mudar</button>
+        </td>
+      </tr>
+      <tr>
+        <td>P2</td>
+        <td *ngFor="let disciplina of disciplinas.getLista(); index as i">
+          <input type="text" value="{{disciplina.ntp2}}">
+          <button>Mudar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</article>

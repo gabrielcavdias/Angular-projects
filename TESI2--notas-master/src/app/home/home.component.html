@@ -1,0 +1,28 @@
+<article>
+  <h1>Identificação</h1>
+  <p>
+    <span class="boldttl">Nome Completo:</span>
+    Helio Gabriel Cavalcante Dias
+    <span class="boldttl">Matrícula:</span>
+    0050831921009
+  </p>
+  <a class="githublnk" href="https://github.com/gabrielcavdias" target="_blank"
+    >Meu Github</a
+  >
+  <table>
+    <thead>
+      <tr>
+        <th *ngFor="let disciplina of disciplinas.getLista(); index as i">
+          {{ disciplina.nome }}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td *ngFor="let disciplina of disciplinas.getLista(); index as i">
+          {{ disciplina.dSemana }} às {{ disciplina.horario }}h
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</article>

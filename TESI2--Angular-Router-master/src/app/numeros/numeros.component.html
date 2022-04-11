@@ -1,0 +1,17 @@
+<article>
+  <h1>Números Aleatórios</h1>
+  <p>
+    Bateu aquela vontade de jogar na mega-sena?
+  </p>
+  <p>
+    Economize seu dinheiro! você nunca vai ganhar.
+  </p>
+  <p>
+    Mas caso queira eis seis números aleatórios que coincidentemente são jogáveis na mega-sena.
+  </p>
+  <ul class="megasena">
+    <li *ngFor="let item of getSixNumbers(); index as i;">
+      {{item}}
+    </li>
+  </ul>
+</article>

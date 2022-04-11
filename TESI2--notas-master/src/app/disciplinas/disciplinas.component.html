@@ -1,0 +1,35 @@
+<article>
+  <h1>Lista de Disciplinas</h1>
+  <h2>Adicionar Disciplina</h2>
+  <label for="nmModel">Nome da disciplina:</label>
+  <input type="text" id="nmModel" [(ngModel)]="nmModel">
+  <label for="dSemanaModel ">Dia da Semana:</label>
+  <input type="text" id="dSemanaModel" [(ngModel)]="dSemanaModel">
+  <label for="horarioModel">Horário da aula:</label>
+  <input type="text" id="horarioModel" [(ngModel)]="horarioModel">
+  <label for="p1Model">Data da Prova 1:</label>
+  <input type="text" id="p1Model" [(ngModel)]="p1Model">
+  <label for="p2Model">Data da prova 2:</label>
+  <input type="text" id="p2Model" [(ngModel)]="p2Model">
+  <button (click)="adicionarDisciplina()">Adicionar</button>
+  <ul class='listaDisciplinas'>
+    <li *ngFor="let disciplina of disciplinas.getLista(); index as i">
+      <div>
+        <h3>{{disciplina.nome}}</h3>
+        <span (click)="disciplinas.remove(i)">X</span>
+      </div>
+      <p>
+        <span class="boldttl">Dia da semana:</span> {{disciplina.dSemana}}
+      </p>
+      <p>
+        <span class="boldttl">Horário:</span> {{disciplina.horario}}
+      </p>
+      <p>
+        <span class="boldttl">Prova 1:</span> {{disciplina.p1}}
+      </p>
+      <p>
+        <span class="boldttl">Prova 2:</span> {{disciplina.p2}}
+      </p>
+    </li>
+  </ul>
+</article>

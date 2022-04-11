@@ -1,0 +1,49 @@
+input[type='number'] {
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  padding: 3px 10px;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+}
+.listaDisciplinas {
+  padding: 5px;
+  max-width: 400px;
+  margin: 1rem auto;
+  border-collapse: collapse;
+}
+.listaDisciplinas li {
+  padding: 10px;
+  border: 1px solid #2b323f;
+  background-color: #525f7c;
+  margin: 1rem 0;
+}
+.listaDisciplinas li div {
+  display: flex;
+  justify-content: space-between;
+}
+li div > span {
+  color: tomato;
+  font-weight: bold;
+}
+h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  font-weight: 300;
+}
+label {
+  display: block;
+  text-align: center;
+  margin: 1rem 0;
+}
+.listaDisciplinas li:hover {
+  transition: 0.5s;
+}
+.botoes {
+  display: flex;
+}
+button {
+  padding: 10px;
+  margin: 1rem auto;
+}

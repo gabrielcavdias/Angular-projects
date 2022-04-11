@@ -1,0 +1,10 @@
+.megasena {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+.megasena li {
+  background-color: #5e81ac;
+  padding: 12px;
+  border-radius: 50%;
+}

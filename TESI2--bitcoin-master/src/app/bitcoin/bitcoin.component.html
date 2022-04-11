@@ -1,0 +1,39 @@
+<table>
+  <thead>
+    <tr>
+      <th>Horário</th>
+      <th>USD</th>
+      <th>BRL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of this.btcServ.btcRates; index as i">
+      <td>
+        {{ item.time.updated }}
+      </td>
+      <td
+        class="{{
+          this.lstValue == item.bpi.BRL.rate_float
+            ? 'neutro'
+            : this.lstValue >= item.bpi.BRL.rate_float
+            ? 'red'
+            : 'green'
+        }}"
+      >
+        {{ item.bpi.USD.rate_float }}
+      </td>
+      <td
+        class="{{
+          this.lstValue == item.bpi.BRL.rate_float
+            ? 'neutro'
+            : this.lstValue >= item.bpi.BRL.rate_float
+            ? 'red'
+            : 'green'
+        }}"
+      >
+        {{ item.bpi.BRL.rate_float }}
+        {{ this.changeLst(item.bpi.BRL.rate_float) }}
+      </td>
+    </tr>
+  </tbody>
+</table>

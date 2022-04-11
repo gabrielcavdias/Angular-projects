@@ -1,0 +1,39 @@
+<article>
+  <div class="saldo">
+    <p>Saldo em BTC:{{ this.walletService.saldoBitcoin }}</p>
+    <p>
+      Saldo em Reais:
+      {{
+        this.walletService.saldoBitcoin *
+          this.walletService.Cotacoes[this.walletService.Cotacoes.length - 1]
+            .btc
+      }}
+    </p>
+    <p>
+      Saldo em Dólar:
+      {{
+        this.walletService.saldoBitcoin *
+          this.walletService.BTCbrl[this.walletService.BTCbrl.length - 1].bpi
+            .USD.rate_float
+      }}
+    </p>
+    <p>
+      Saldo em EURO:
+      {{
+        this.walletService.saldoBitcoin *
+          this.walletService.BTCeur[this.walletService.BTCeur.length - 1].bpi
+            .EUR.rate_float
+      }}
+    </p>
+  </div>
+  <div class="adicionar">
+    <label for="sldAdd">Acrescentar/Remover Saldo(Em Reais):</label>
+    <input type="number" name="sldAdd" id="sldAdd" [(ngModel)]="inputModel" />
+  </div>
+  <div class="botoes">
+    <button (click)="this.handleSaldo(inputModel)">Adicionar</button>
+    <button (click)="this.handleSaldo(inputModel - inputModel * 2)">
+      Remover
+    </button>
+  </div>
+</article>

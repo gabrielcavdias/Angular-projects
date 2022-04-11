@@ -1,0 +1,28 @@
+<article>
+  <table>
+    <thead>
+      <tr>
+        <th>Index</th>
+        <th>USD</th>
+        <th>EUR</th>
+        <th>BTC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cotacao of this.walletService.Cotacoes; index as i">
+        <td>
+          {{ i + 1 }}
+        </td>
+        <td>
+          {{ cotacao.usd.toFixed(2) }}
+        </td>
+        <td>
+          {{ cotacao.eur.toFixed(2) }}
+        </td>
+        <td>
+          {{ cotacao.btc.toFixed(2) }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</article>

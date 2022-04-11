@@ -1,0 +1,37 @@
+.githublnk {
+  color: #d8dee9;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+  border: 2px solid #bec2c5;
+  border-radius: 10px;
+  display: block;
+  width: 50%;
+  max-width: 200px;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+.githublnk:hover {
+  color: #fff;
+}
+p {
+  width: 70%;
+  margin: 0 auto;
+}
+table {
+  margin-top: 10px;
+  border: 1px solid #eee;
+  border-collapse: collapse;
+}
+th {
+  background-color: #dfe2e9;
+  color: rgb(17, 17, 17);
+  border: 1px solid #4c566a;
+}
+td {
+  border: 1px solid #eee;
+}
+td,
+th {
+  padding: 10px;
+}

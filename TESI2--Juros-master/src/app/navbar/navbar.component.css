@@ -1,0 +1,35 @@
+nav {
+  background-color: #2e3440;
+  padding: 10px;
+  border-bottom: 1px solid #4c566a;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+li {
+  padding: 15px 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+li:hover {
+  background-color: #3b4252;
+  transition: 0.5s;
+}
+li a {
+  color: #d8dee9;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: 0.4s;
+  text-align: center;
+}
+li a:hover {
+  color: #fff;
+  transition: 0.4s;
+}

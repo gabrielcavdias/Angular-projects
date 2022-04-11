@@ -1,0 +1,17 @@
+table {
+  margin-top: 10px;
+  border: 1px solid #eee;
+  border-collapse: collapse;
+}
+th {
+  background-color: #dfe2e9;
+  color: rgb(17, 17, 17);
+  border: 1px solid #4c566a;
+}
+td {
+  border: 1px solid #eee;
+}
+td,
+th {
+  padding: 10px;
+}

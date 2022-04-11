@@ -1,0 +1,15 @@
+<h2>Lista Firebase</h2>
+<div>
+  <input type="text" name="entrada" [(ngModel)]="entrada" />
+  <button (click)="addItem()">Adicionar</button>
+</div>
+<hr />
+
+<ul>
+  <li *ngFor="let item of list | async">
+    <span [title]="['chave: ' + item.key]">
+      {{ item.text }}
+    </span>
+    <button class="removeItem" (click)="deleteItem(item.key)">Remover</button>
+  </li>
+</ul>
